@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>VetQnect - Online Veterans Community Powered by SocialQnect</title>
+	</head>
+	
+<body>
+<script>
+		var isMobile = {
+   			Android: function() {
+       			return navigator.userAgent.match(/Android/i);
+    		},
+    			iOS: function() {
+        		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    		}
+	    };
+		if ( isMobile.Android() ) {
+   			document.location.href = "https://play.google.com/store/apps/details?id=com.socialqnect.VetQnect";
+		} else if(isMobile.iOS()) {
+			document.location.href="https://itunes.apple.com/us/app/illinois-veterans-network/id1134660053?mt=8";
+		} else {
+			document.location.href="http://vetqnect.com/";
+		}
+</script>
+</body>
+</html>
